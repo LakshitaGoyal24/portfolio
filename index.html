@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
   <title>Lakshita | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
   <nav>
     <div class="container">
@@ -42,65 +44,57 @@
         <h1>I'm <span>Lakshita Goyal</span></h1>
         <p class="animated-role"><span class="typing"></span></p>
         <a href="#projects" class="btn">View My Work</a>
+        <button class="btn" id="contactBtn">Contact Me</button>
       </div>
     </div>
   </header>
-  
-  
-  
-
   <section id="about" class="about-section">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a BTech student specializing in Information Technology with a focus on software engineering. I have experience in web development, machine learning, and cloud technologies. My goal is to apply my technical skills to real-world challenges in software development.</p>
+      <p>I am a BTech student specializing in Information Technology with a focus on software engineering. I have
+        experience in web development, machine learning, and cloud technologies. My goal is to apply my technical skills
+        to real-world challenges in software development.</p>
     </div>
   </section>
 
   <section id="skills" class="skills-section">
-    <div class="container">
-      <h2>Skills</h2>
+    <div class="container" style="margin-top: 50px;">
+      <h2 style="margin-bottom: 30px;">Skills</h2>
       <div class="skills-grid">
-        
-        <!-- Languages Skill -->
         <div class="skill-item">
           <div class="skill-icon">
-            <i class="fas fa-code"></i> <!-- Icon for languages -->
+            <i class="fas fa-code"></i>
           </div>
           <h3>Languages</h3>
           <p>JavaScript, Python, C++, TypeScript</p>
         </div>
-  
-        <!-- Web Technologies Skill -->
+
         <div class="skill-item">
           <div class="skill-icon">
-            <i class="fas fa-globe"></i> <!-- Icon for web technologies -->
+            <i class="fas fa-globe"></i>
           </div>
           <h3>Web Technologies</h3>
           <p>HTML, CSS, React.js, Node.js, Tailwind CSS</p>
         </div>
-  
-        <!-- Databases Skill -->
+
         <div class="skill-item">
           <div class="skill-icon">
-            <i class="fas fa-database"></i> <!-- Icon for databases -->
+            <i class="fas fa-database"></i>
           </div>
           <h3>Databases</h3>
           <p>MongoDB, MySQL</p>
         </div>
-  
-        <!-- Tools Skill -->
+
         <div class="skill-item">
           <div class="skill-icon">
-            <i class="fas fa-tools"></i> <!-- Icon for tools -->
+            <i class="fas fa-tools"></i>
           </div>
           <h3>Tools</h3>
           <p>Git, Postman, VSCode</p>
         </div>
-        
       </div>
     </div>
   </section>
-  
 
   <section id="projects" class="projects-section">
     <div class="container">
@@ -108,13 +102,25 @@
       <div class="projects-grid">
         <div class="project-item">
           <h3>Student Dashboard Project (Webathon 2k24)</h3>
-          <p>As part of Webathon 2k24, our team developed a **Student Dashboard** to help students track their academic and extracurricular progress. The platform enables users to showcase achievements, collaborate on projects, and stay updated on milestones. Built with **React.js**, **Node.js**, and a **MongoDB** backend, it offers a sleek interface using **MUI** for a smooth user experience. The dashboard centralizes student activity, fostering teamwork, organization, and networking opportunities, making it a valuable tool for managing their growth effectively.</p>
-          <a href="https://github.com/bharath-chan/webathon-2k24_team18" target="_blank" class="creative-btn">View on GitHub</a>
+          <p>As part of Webathon 2k24, our team developed a <b>Student Dashboard</b> to help students track their
+            academic and extracurricular progress. The platform enables users to showcase achievements, collaborate on projects,
+            and stay updated on milestones. Built with <b>React.js</b>, <b>Node.js</b>, and a <b>MongoDB</b> backend, it
+            offers a sleek interface using <b>MUI</b> for a smooth user experience. The dashboard centralizes student activity,
+            fostering teamwork, organization, and networking opportunities, making it a valuable tool for managing their
+            growth effectively.</p>
+          <a href="https://github.com/bharath-chan/webathon-2k24_team18" target="_blank" class="creative-btn">View on
+            GitHub</a>
         </div>
         <div class="project-item">
           <h3>Remote Mechanic: Virtual Car Assistance Platform</h3>
-          <p>Remote Mechanic is an innovative platform designed to offer real-time assistance for car owners who need mechanical support. The platform connects users with remote mechanics, enabling troubleshooting through video calls and detailed diagnostic inputs. It allows users to receive expert advice from certified professionals, book repairs, and even track service history digitally. The system empowers car owners by providing immediate solutions without requiring a physical mechanic visit, enhancing convenience and reliability.</p>
-          <a href="https://github.com/LakshitaGoyal24/remotemechanic" target="_blank" class="creative-btn">View on GitHub</a>
+          <p>Remote Mechanic is an innovative platform designed to offer real-time assistance for car owners who need
+            mechanical support. The platform connects users with remote mechanics, enabling troubleshooting through
+            video calls and detailed diagnostic inputs. It allows users to receive expert advice from certified
+            professionals, book repairs, and even track service history digitally. The system empowers car owners by
+            providing immediate solutions without requiring a physical mechanic visit, enhancing convenience and
+            reliability.</p>
+          <a href="https://github.com/LakshitaGoyal24/remotemechanic" target="_blank" class="creative-btn">View on
+            GitHub</a>
         </div>
       </div>
     </div>
@@ -122,14 +128,16 @@
 
   <section id="experience" class="experience-section">
     <div class="container">
-      <h2>Experience</h2>
+      <h2 style="margin-bottom: 30px;">Experience</h2>
       <div class="experience-item">
-        <h3>Web Developer (Volunteer)</h3>
-        <p>Google Developer Student Clubs (GDSC) VNR VJIET | From - To</p>
+        <h3>Web Coordinator</h3>
+        <p>Google Developer Student Clubs (GDGC) VNR VJIET </p>
         <ul>
           <li>Developed and maintained the official club website.</li>
-          <li>Collaborated with team leads to integrate new features.</li>
         </ul>
+        <button style="padding: 10px;background-color: teal;border: none;border-radius: 10px; margin-top: 10px;">
+          <a href="https://gdsc-vnrvjiet.vercel.app/" style="text-decoration: none; color: white; font-size: 1rem;" target="_blank">The gdgc website</a>
+        </button>
       </div>
     </div>
   </section>
@@ -139,9 +147,9 @@
       <h2>Contact</h2>
       <p>Feel free to reach out for collaboration or job opportunities!</p>
       <div class="contact-info">
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="#">laksita2004@gmail.com</a>
+        <a href="https://www.linkedin.com/in/lakshita-goyal-2a4b52292/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/LakshitaGoyal24/" target="_blank">GitHub</a>
       </div>
     </div>
   </footer>
@@ -152,8 +160,8 @@
     let typingElement = document.querySelector('.typing');
     let typingSpeed = 150;
     let erasingSpeed = 100;
-    let delayBetweenRoles = 2000; // Time before typing next role
-  
+    let delayBetweenRoles = 2000;
+
     function type() {
       if (charIndex < roles[roleIndex].length) {
         typingElement.textContent += roles[roleIndex].charAt(charIndex);
@@ -163,7 +171,7 @@
         setTimeout(erase, delayBetweenRoles);
       }
     }
-  
+
     function erase() {
       if (charIndex > 0) {
         typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
@@ -174,11 +182,65 @@
         setTimeout(type, typingSpeed);
       }
     }
-  
-    document.addEventListener("DOMContentLoaded", function() { 
+
+    document.addEventListener("DOMContentLoaded", function () {
       setTimeout(type, delayBetweenRoles);
     });
+    document.getElementById("contactBtn").onclick = function () {
+      Swal.fire({
+        title: 'Contact Me',
+        html: `
+      <style>
+        .swal2-container {
+          font-family: Arial, sans-serif;
+        }
+        .swal2-popup {
+          padding: 20px !important;
+          border-radius: 10px;
+          width: 350px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
+        }
+        .swal2-title {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+          color: #333;
+        }
+        .swal2-input {
+          margin-bottom: 10px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          width: calc(100% - 20px);
+        }
+        .swal2-confirm {
+          background-color: #5cb85c;
+          color: white;
+          border: none;
+          border-radius: 5px;
+        }
+      </style>
+      <input type="text" id="name" class="swal2-input" placeholder="Your Name">
+      <input type="email" id="email" class="swal2-input" placeholder="Your Email">
+      <textarea id="message" class="swal2-input" placeholder="Your Message"></textarea>
+    `,
+        focusConfirm: false,
+        preConfirm: () => {
+          const name = Swal.getInput('name').value;
+          const email = Swal.getInput('email').value;
+          const message = Swal.getInput('message').value;
+          if (!name || !email || !message) {
+            Swal.showValidationMessage(`Please enter all fields`);
+          }
+          return { name: name, email: email, message: message };
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire('Sent!', 'Your message has been sent.', 'success');
+        }
+      });
+    };
   </script>
-  
 </body>
+
 </html>
