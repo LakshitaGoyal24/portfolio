@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lakshita | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1 class="logo">Lakshita Goyal</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="left-side">
+      <div class="photo-container">
+        <img src="./Lakshita Goyal.jpg" alt="Lakshita" class="hero-photo" />
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/your-username" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="hero-text">
+        <h1>I'm <span>Lakshita Goyal</span></h1>
+        <p class="animated-role"><span class="typing"></span></p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </header>
+  
+  
+  
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a BTech student specializing in Information Technology with a focus on software engineering. I have experience in web development, machine learning, and cloud technologies. My goal is to apply my technical skills to real-world challenges in software development.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        
+        <!-- Languages Skill -->
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i> <!-- Icon for languages -->
+          </div>
+          <h3>Languages</h3>
+          <p>JavaScript, Python, C++, TypeScript</p>
+        </div>
+  
+        <!-- Web Technologies Skill -->
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-globe"></i> <!-- Icon for web technologies -->
+          </div>
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, React.js, Node.js, Tailwind CSS</p>
+        </div>
+  
+        <!-- Databases Skill -->
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i> <!-- Icon for databases -->
+          </div>
+          <h3>Databases</h3>
+          <p>MongoDB, MySQL</p>
+        </div>
+  
+        <!-- Tools Skill -->
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i> <!-- Icon for tools -->
+          </div>
+          <h3>Tools</h3>
+          <p>Git, Postman, VSCode</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <h3>Student Dashboard Project (Webathon 2k24)</h3>
+          <p>As part of Webathon 2k24, our team developed a **Student Dashboard** to help students track their academic and extracurricular progress. The platform enables users to showcase achievements, collaborate on projects, and stay updated on milestones. Built with **React.js**, **Node.js**, and a **MongoDB** backend, it offers a sleek interface using **MUI** for a smooth user experience. The dashboard centralizes student activity, fostering teamwork, organization, and networking opportunities, making it a valuable tool for managing their growth effectively.</p>
+          <a href="https://github.com/bharath-chan/webathon-2k24_team18" target="_blank" class="creative-btn">View on GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>Remote Mechanic: Virtual Car Assistance Platform</h3>
+          <p>Remote Mechanic is an innovative platform designed to offer real-time assistance for car owners who need mechanical support. The platform connects users with remote mechanics, enabling troubleshooting through video calls and detailed diagnostic inputs. It allows users to receive expert advice from certified professionals, book repairs, and even track service history digitally. The system empowers car owners by providing immediate solutions without requiring a physical mechanic visit, enhancing convenience and reliability.</p>
+          <a href="https://github.com/LakshitaGoyal24/remotemechanic" target="_blank" class="creative-btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Web Developer (Volunteer)</h3>
+        <p>Google Developer Student Clubs (GDSC) VNR VJIET | From - To</p>
+        <ul>
+          <li>Developed and maintained the official club website.</li>
+          <li>Collaborated with team leads to integrate new features.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration or job opportunities!</p>
+      <div class="contact-info">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const roles = ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Software Engineer"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let typingElement = document.querySelector('.typing');
+    let typingSpeed = 150;
+    let erasingSpeed = 100;
+    let delayBetweenRoles = 2000; // Time before typing next role
+  
+    function type() {
+      if (charIndex < roles[roleIndex].length) {
+        typingElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(erase, delayBetweenRoles);
+      }
+    }
+  
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+      } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(type, typingSpeed);
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", function() { 
+      setTimeout(type, delayBetweenRoles);
+    });
+  </script>
+  
+</body>
+</html>
